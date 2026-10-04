@@ -1,0 +1,44 @@
+
+
+body{
+    background-color: black
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+.headingContainer{
+
+}
+.title{
+    color: #BC0202;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.username{
+    color: #ff0000;
+}
+.btn{
+    background-color: #BC0202;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    width: 300px;
+    height: 65px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.btn:hover{
+    width: 320px;
+    height: 75px;
+    transition-duration: 0.3s;
+}
+.btn>a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,114 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+}
+.mainContainer{
+    width: 500px;
+    height: 550px;
+    background-color: #BC0202;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    border-radius: 20px;
+    text-align: center;
+}
+.loginContainer{
+    width: 500px;
+    height: 500px;
+    background-color: #BC0202;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    border-radius: 20px;
+    text-align: center;
+}
+.container{
+    margin-top: 0px;
+    text-align: center;
+    width: 400px;
+    height: 275px;
+    background-color: #BC0202;
+}
+.title{
+    font-size: 50px;
+    margin-top: 45px;
+    color: #bfbcb8;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input{
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: antiquewhite;
+    background-color: black;
+    transition-duration: 0.3s;
+}
+.name{
+
+}
+.email{
+
+}
+.pass{
+
+}
+.button{
+   color: #877f74;
+   margin-top: 50px;
+   width: 300px;
+   height: 65px;
+   cursor: pointer;
+}
+.button:hover{
+    width: 320px;
+    height: 75px;
+}
+.input:hover{
+    color: #BC0202;
+    transition-duration: 0.3s;
+}
+.input:focus{
+    color: #BC0202;
+}
+.input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: none; /* Removes any browser-specific glow or shadow */
+}
+.text{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #877f74;
+    font-weight: bolder;
+}
+.anchor{
+    text-decoration: none;
+    color: #a9a59e;
+    font-weight: bolder;
+    transition-duration: 0.3s;
+}
+.anchor:hover{
+    font-size: 30px;
+    transition-duration: 0.3s;
+}
+.registerError{
+    font-size: 30px;
+}
+.loginError{
+    font-size: 40px;
+}

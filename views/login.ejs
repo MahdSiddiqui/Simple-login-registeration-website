@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+    
+
+    <div class="loginContainer">
+        <div class="container">
+            <h1 class="title <% if(locals.error){%>loginError<%}%>"><%if(locals.error){%><%= error %><%}else{%> Log in <%}%> </h1>
+
+            <form action="/submitlogin" method="POST">
+                <input class="input" placeholder="EMAIL" type="email" name="email">
+                <input class="input" placeholder="PASSWORD" type="password" name="password">
+                <input class="input button" value="Log in" type="submit">
+
+                <p class="text">No account? <a class="anchor" href="/register">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
