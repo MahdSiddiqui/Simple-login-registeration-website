@@ -27,6 +27,7 @@ app.get("/register", (req, res) => {
     res.render("register.ejs");
 });
 
+
 app.post("/registeration", async (req, res) => {
     const username = req.body.username;
     const email = req.body.email;
