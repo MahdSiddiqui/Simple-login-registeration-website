@@ -57,7 +57,7 @@ app.post("/registeration", async (req, res) => {
     try{
         await db.query("INSERT INTO users (username, email, password) VALUES ($1, $2, $3)", [username, email, password]);
     } catch(err){
-        console.log(err);
+        console.log("the error: " + err);
         console.log(err.constraint);
         errorOccur = true;
 
