@@ -3,6 +3,7 @@ import ejs from "ejs";
 import bodyParser from "body-parser";
 import pg from "pg";
 import { Pool } from "pg";
+import path from "path";
 
 const __dirname = import.meta.dirname;
 
