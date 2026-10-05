@@ -4,6 +4,8 @@ import bodyParser from "body-parser";
 import pg from "pg";
 import { Pool } from "pg";
 
+const __dirname = import.meta.dirname;
+
 const app = express();
 const port = 3000;
 
@@ -27,7 +29,7 @@ const db = new Pool({
 //db.connect(); */
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));;
 
 app.get("/", (req, res) => {
     res.redirect("/register");
