@@ -14,6 +14,7 @@ const db = new Pool({
   },
 });
 
+// yay
 
 /* const db = new pg.Client({
   user: "neondb_owner",
