@@ -43,6 +43,8 @@ app.post("/registeration", async (req, res) => {
     const email = req.body.email;
     const password = req.body.password;
 
+    console.log("data: " + username, email, password);
+
     let errorOccur = false;
     
     let error = "";
