@@ -2,20 +2,28 @@ import express from "express";
 import ejs from "ejs";
 import bodyParser from "body-parser";
 import pg from "pg";
+import { Pool } from "pg";
 
 const app = express();
 const port = 3000;
 
-
-const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "Authentication",
-  password: "abc123",
-  port: 5432,
+const db = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
-db.connect();
+
+/* const db = new pg.Client({
+  user: "neondb_owner",
+  host: "ep-green-art-b8vy2v24-pooler.c-14.us-east-1.aws.neon.tech",
+  database: "neondb",
+  password: "npg_my6MRSLEsk9g",
+  port: 5432,
+}); 
+
+//db.connect(); */
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));

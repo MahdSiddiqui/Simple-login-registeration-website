@@ -12,6 +12,7 @@
   "type": "module",
   "dependencies": {
     "body-parser": "^2.3.0",
+    "dotenv": "^18.0.5",
     "ejs": "^6.0.1",
     "express": "^5.2.1",
     "pg": "^8.23.1"
